@@ -1,0 +1,57 @@
+{
+  "name": "@s4p/autojs-apk-build",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "fs-extra": "^8.1.0",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@ofa2/eslint-config": "^3.4.0",
+    "@types/bluebird": "^3.5.29",
+    "@types/fs-extra": "^8.0.1",
+    "@types/node": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "chalk": "^3.0.0",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "gulp": "^4.0.2",
+    "gulp-cached": "^1.1.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-filter": "^6.0.0",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-remember": "^1.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "node-notifier": "^6.0.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "streamqueue": "^1.1.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/ts-node --project tsconfig.json --log-error --files index.ts",
+    "lint": "gulp lint",
+    "lint-fix": "./node_modules/.bin/eslint src/**/*.ts --fix",
+    "watch": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "Auto.js",
+    "auto.js",
+    "autojs",
+    "apk",
+    "app"
+  ],
+  "author": "xinshangshangxin",
+  "license": "MIT"
+}

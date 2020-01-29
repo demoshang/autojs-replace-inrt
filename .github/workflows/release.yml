@@ -1,0 +1,56 @@
+name: publish to npm
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12]
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: build dist
+        working-directory: ./
+        run: |
+          npm install
+          npm run build
+      - name: upload dist dir
+        uses: actions/upload-artifact@v1
+        with:
+          name: dist-${{ matrix.node-version }}
+          path: ./dist
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+
+      - uses: actions/download-artifact@v1
+        with:
+          name: dist-12
+
+      - name: publish
+        run: |
+          mv dist-12 dist
+          cd dist
+          npm install
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}

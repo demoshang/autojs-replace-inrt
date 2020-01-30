@@ -53,5 +53,8 @@
     "app"
   ],
   "author": "xinshangshangxin",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }

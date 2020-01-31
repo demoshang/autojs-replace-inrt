@@ -1,6 +1,6 @@
 {
   "name": "@s4p/autojs-apk-build",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "bin": {

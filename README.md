@@ -33,7 +33,7 @@
 
 ```bash
 # npm 构建
-npx @s4p/autojs-apk-build "Auto.js项目目录" "js代码目录"
+npx @s4p/autojs-replace-inrt "Auto.js项目目录" "js代码目录"
 
 # dev 构建
 npm start -- "Auto.js项目目录" "js代码目录"

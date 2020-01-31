@@ -1,10 +1,10 @@
 {
-  "name": "@s4p/autojs-apk-build",
+  "name": "@s4p/autojs-replace-inrt",
   "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "bin": {
-    "autojs-apk-build": "./bin/autojs-apk-build"
+    "autojs-replace-inrt": "./bin/autojs-replace-inrt"
   },
   "dependencies": {
     "bluebird": "^3.7.2",

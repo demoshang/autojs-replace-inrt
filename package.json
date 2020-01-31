@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "autojs-apk-build": "./bin/autojs-apk-build"
+  },
   "dependencies": {
     "bluebird": "^3.7.2",
     "fs-extra": "^8.1.0",

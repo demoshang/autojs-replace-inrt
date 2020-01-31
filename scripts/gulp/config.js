@@ -21,7 +21,7 @@ const config = {
     newSubstr: '',
   },
   cp: {
-    src: ['package.json'],
+    src: ['package.json', 'bin/**/*'],
     opt: {
       cwd: './',
       base: './',

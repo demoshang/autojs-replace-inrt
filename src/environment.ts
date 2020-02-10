@@ -29,7 +29,6 @@ export interface Env {
     appName: string;
   };
   defaultApplicationId: {
-    str: string;
     regexp: RegExp;
   };
   defaultApplicationPath: {
@@ -88,7 +87,6 @@ async function getEnv(autojsProjectDir: string, jsDir: string): Promise<Env> {
     appName: project.name,
     inrtProjectDir: autojsProjectDir,
     defaultApplicationId: {
-      str: 'com.shang.autojs.jd.nianshou',
       regexp: /com\.stardust\.auojs\.inrt/gm,
     },
     defaultApplicationPath: {
@@ -96,7 +94,7 @@ async function getEnv(autojsProjectDir: string, jsDir: string): Promise<Env> {
       base: pathResolve(autojsProjectDir, 'inrt/src/main/java'),
       application: 'com/stardust/auojs/inrt',
     },
-    defaultAuthorities: 'com.shang.autojs.jd.nianshou.provider',
+    defaultAuthorities: 'org.autojs.autojs.inrt.fileprovider',
     assetsPath: {
       from: jsDir,
       to: pathResolve(autojsProjectDir, 'inrt/src/main/assets/project'),

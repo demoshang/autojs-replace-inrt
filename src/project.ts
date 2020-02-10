@@ -98,10 +98,6 @@ export class Project {
   }
 
   private async replaceApplicationId(content: string): Promise<string> {
-    if (!content.includes(this.env.defaultApplicationId.str)) {
-      return content;
-    }
-
     return content.replace(this.env.defaultApplicationId.regexp, this.env.applicationId);
   }
 

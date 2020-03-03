@@ -1,5 +1,10 @@
 # Auto.js apk build
 
+## 成品
+
+[APK demo 下载](https://github.com/demoshang/autojs-scripts/actions/runs/48530254)  
+[demo 构建脚本](https://github.com/demoshang/autojs-scripts/blob/master/.github/workflows/build.yml#L29-L55)
+
 ## 原理
 
 1. fork [hyb1996/Auto.js](https://github.com/hyb1996/Auto.js) 修改成 [demoshang/Auto.js](https://github.com/demoshang/Auto.js)

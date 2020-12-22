@@ -34,7 +34,7 @@
     "gulp-replace": "^1.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-typescript": "^6.0.0-alpha.1",
-    "node-notifier": "^6.0.0",
+    "node-notifier": "^8.0.1",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "streamqueue": "^1.1.2",
